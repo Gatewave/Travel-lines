@@ -1,0 +1,653 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo');
+.language{
+width: 100%;
+height: 50px;
+background: #F8F8F8;
+padding-top: 6px;
+border-bottom: 1px solid rgba(136,136,132,.6);
+}
+.language span{
+    font-family: 'Cairo', sans-serif;
+}
+.language .dd .ddTitle .ddTitleText {
+    padding: 5px 50px 5px 5px;
+    text-align: right;
+    word-spacing: 2px;
+}
+.modal-backdrop{
+    position: relative!important;
+}
+.modal {
+    top: calc(50% - (50%/2));
+}
+
+nav{
+direction: rtl;
+font-family: 'Cairo', sans-serif !important;
+}
+nav  #sign{
+    border-left: 1px solid rgba(136,136,132,.6);
+}
+nav  button.btn.btn-primary.btn-sm {
+    margin-top: 5px;
+    width: 200px;
+    margin-left: 6px;
+}
+nav.bg-light {
+    background-color: #fff!important;
+}
+nav #toggle_menu{
+    font-family: 'Cairo', sans-serif;
+    font-size: 14px;
+    text-align: right;
+    font-weight: bolder;
+    cursor: pointer;
+    color: #888888;
+}
+nav #toggle_menu li{
+    padding: 0 4px;
+}
+nav #toggle_menu li:hover{
+    color: #444;
+}
+/* Underline From Center */
+.hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+.hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    top: 19px;
+    right: 51%;
+    bottom: 0;
+    background: #AD1FE3;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+}
+
+#banner > .row > div[class="col-12"]{
+    background: url("../img/banner.jpeg") no-repeat left center;
+    background-size: cover;
+    height: 600px;
+}
+
+/***************************************************************range area**************************************/
+/* This line can be removed it was just for display on CodePen: */
+section#range {
+    width: 50%;
+    margin-left: calc(50% - (50%/2));
+}
+
+span#slider-range-value1 {
+    color:#fff;
+}
+span#slider-range-value2 {
+    color:#fff;
+}
+div[class="col-6 caption"] > strong,
+div[class="col-6 text-right caption"] > strong{
+    color:#fff !important;
+}
+
+.slider-labels {
+    margin-top: 10px;
+}
+
+/* Functional styling;
+ * These styles are required for noUiSlider to function.
+ * You don't need to change these rules to apply your design.
+ */
+.noUi-target,.noUi-target * {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    touch-action: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.noUi-target {
+    position: relative;
+    direction: ltr;
+}
+
+.noUi-base {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    /* Fix 401 */
+}
+
+.noUi-origin {
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.noUi-handle {
+    position: relative;
+    z-index: 1;
+}
+
+.noUi-stacking .noUi-handle {
+    /* This class is applied to the lower origin when
+       its values is > 50%. */
+    z-index: 10;
+}
+
+.noUi-state-tap .noUi-origin {
+    transition: left 0.3s,top .3s;
+}
+
+.noUi-state-drag * {
+    cursor: inherit !important;
+}
+
+/* Painting and performance;
+ * Browsers can paint handles in their own layer.
+ */
+.noUi-base,.noUi-handle {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+/* Slider size and handle placement;
+ */
+.noUi-horizontal {
+    height: 4px;
+}
+
+.noUi-horizontal .noUi-handle {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    left: -7px;
+    top: -7px;
+    background-color: #dee2e6;
+}
+
+/* Styling;
+ */
+.noUi-background {
+    background: #D6D7D9;
+}
+
+.noUi-connect {
+    background: #2180c4;
+    transition: background 450ms;
+}
+
+.noUi-origin {
+    border-radius: 2px;
+}
+
+.noUi-target {
+    border-radius: 2px;
+}
+
+.noUi-target.noUi-connect {
+}
+
+/* Handles and cursors;
+ */
+.noUi-draggable {
+    cursor: w-resize;
+}
+
+.noUi-vertical .noUi-draggable {
+    cursor: n-resize;
+}
+
+.noUi-handle {
+    cursor: default;
+    box-sizing: content-box !important;
+}
+
+.noUi-handle:active {
+    border: 8px solid #345DBB;
+    border: 8px solid rgba(53,93,187,0.38);
+    background-clip: padding-box;
+    left: -14px;
+    top: -14px;
+}
+
+/* Disabled state;
+ */
+[disabled].noUi-connect,[disabled] .noUi-connect {
+    background: #B8B8B8;
+}
+
+[disabled].noUi-origin,[disabled] .noUi-handle {
+    cursor: not-allowed;
+}
+
+
+
+
+
+div.search-bar{
+    width: 800px;
+    height: 200px;
+    background-color: rgba(33,37,41,0.56);
+    margin-left: calc(50% - (800px/2));
+    border-radius: 6px;
+    margin-top: calc(50% - (850px/2));
+}
+div.search-bar h4 {
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+    color: #fff;
+}
+.btn-outline-secondary {
+    color: #6c757d;
+    background-color: #f0f0f0;
+    background-image: none;
+    border-color: #F0F0F0;
+}
+div.search-bar > .input-group{
+    width:50%;
+    margin-left: calc(50% - (50%/2));
+    font-family: 'Cairo', sans-serif;
+}
+div.search-bar > section > .custom-range {
+    width: 50%;
+    padding-left: 0;
+    margin-left: calc(50% - (50%/2));
+}
+
+div.search-bar > .input-group > select#inputGroupSelect03,
+div.search-bar > .input-group > select#inputGroupSelect04 {
+direction: rtl;
+}
+
+div#categories{
+    font-family: 'Cairo', sans-serif;
+}
+div#categories i{
+    width: 30px;
+    padding: 5px 0px;
+    height: 30px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-left: 3px;
+}
+section#hotels{
+    font-family: 'Cairo', sans-serif;
+    width: 100%;
+    height: 60px;
+    background: #1B77E4;
+    text-align: center;
+    border-radius: 6px;
+    padding-top: 15px;
+    color:#fff;
+    cursor: pointer;
+}
+section#airplane{
+    font-family: 'Cairo', sans-serif;
+    width: 100%;
+    height: 60px;
+    background: #AD1FE3;
+    text-align: center;
+    border-radius: 6px;
+    padding-top: 15px;
+    color:#fff;
+    cursor: pointer;
+}
+section#nile{
+    font-family: 'Cairo', sans-serif;
+    width: 100%;
+    height: 60px;
+    background: #D91F9E;
+    text-align: center;
+    border-radius: 6px;
+    padding-top: 15px;
+    color:#fff;
+    cursor: pointer;
+}
+section#offers{
+    font-family: 'Cairo', sans-serif;
+    width: 100%;
+    height: 60px;
+    background: #2180C4;
+    text-align: center;
+    border-radius: 6px;
+    padding-top: 15px;
+    color:#fff;
+    cursor: pointer;
+}
+section#inside-tourism{
+    font-family: 'Cairo', sans-serif;
+    width: 100%;
+    height: 60px;
+    background: #225BA0;
+    text-align: center;
+    border-radius: 6px;
+    padding-top: 15px;
+    color:#fff;
+    cursor: pointer;
+}
+section#best-offers{
+    font-family: 'Cairo', sans-serif;
+    width: 100%;
+    height: 60px;
+    background: #8A4F9F;
+    text-align: center;
+    border-radius: 6px;
+    padding-top: 15px;
+    color:#fff;
+    cursor: pointer;
+}
+
+section#hotels:hover,
+section#airplane:hover,
+section#nile:hover,
+section#offers:hover,
+section#inside-tourism:hover,
+section#best-offers:hover{
+    opacity: 0.7;
+    transition: all ease-in-out 0.5s;
+}
+
+#packages > .row > div[class="col-12"] > h2{
+    font-family: 'Cairo', sans-serif;
+    padding: 40px 0;
+}
+#packages > .row > div[class="col-12"] > h2:after{
+    content: "";
+    width: 200px;
+    height: 3px;
+    background: rgba(136,136,132,.6);
+    position: absolute;
+    border-radius: 3px;
+    top: 60px;
+    left: 270px;
+    z-index:5;
+}
+#packages > .row > div[class="col-12"] > h2:before{
+    content: "";
+    width: 200px;
+    height: 3px;
+    background: rgba(136,136,132,.6);
+    position: absolute;
+    border-radius: 3px;
+    top: 60px;
+    right: 270px;
+    z-index:5;
+}
+#packages i.fas.fa-star {
+    color: #ffc107;
+    padding-right: 4px;
+}
+
+#packages .card-title{
+    background:#2180C4 ;
+    padding: 10px 0;
+    color: #fff;
+}
+#packages .card-body{
+    padding: 0;
+}
+#packages ul[class="list-unstyled"] > li[class="media"]{
+    direction: rtl !important;
+}
+#packages ul[class="list-unstyled"] > li[class="media"] > div[class="media-body"] > h5{
+    direction: rtl !important;
+    text-align: right;
+    padding-bottom: 6px;
+    font-family: 'Cairo', sans-serif;
+    border-bottom: 2px solid rgba(136,136,132,.6) ;
+}
+#packages ul[class="list-unstyled"] > li[class="media"] > div[class="media-body"] > p{
+    direction: rtl !important;
+    text-align: right;
+    font-family: 'Cairo', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color:#6c757d;
+}
+#packages .btn-light {
+    color: #2180C4;
+    background-color: rgba(136,136,132,.6);
+    border-color: rgba(136,136,132,.6);
+}
+#packages ul[class="list-unstyled"] > li > button.btn.btn-primary.btn-sm,
+#packages ul[class="list-unstyled"] > li > button.btn.btn-light.btn-sm{
+    font-family: 'Cairo', sans-serif;
+    width: 100%;
+    border-radius: 0;
+    margin-top: 3px;
+    height: 40px;
+    font-weight: bold;
+    /*position: absolute;*/
+    /*bottom: 0;*/
+}
+#packages .card{
+    margin: 0 20px;
+}
+#packages h5[data-name="turk"]::before{
+    content: "7 ليالى و 6 ايام من :1000ج.م";
+    width: 150px;
+    height: 50px;
+    font-family: 'Cairo', sans-serif;
+    background-color: #8A4F9F;
+    color: #fff;
+    font-size: 12px;
+    padding-top: 15px;
+    font-weight: bold;
+    text-align: center;
+    direction: rtl;
+    position: absolute;
+    top: 182px;
+    left: 6px;
+    z-index: 222;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+/*#packages h5[data-name="spain"]::before{*/
+    /*content: "";*/
+    /*width: 100px;*/
+    /*height: 50px;*/
+    /*background-color:#8A4F9F;*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*z-index: 222;*/
+/*}*/
+#packages h5[data-name="italy"]::before{
+    content: "3 ليالى من 400ج.م";
+    width: 121px;
+    height: 73px;
+    font-family: 'Cairo', sans-serif;
+    color: #fff;
+    background-color: #8A4F9F;
+    position: absolute;
+    top: 202px;
+    left: 0;
+    z-index: 222;
+    border-top-right-radius: 3px;
+    direction: rtl;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    padding-top:30px;
+}
+
+#packages .carousel-control-next,
+#packages .carousel-control-prev {
+    top:calc(50% - (12%/2));
+    background: #8A4F9F;
+    width: 5%;
+    height: 7%;
+    color: #fff;
+    text-align: center;
+    opacity: .9;
+}
+#packages .carousel-control-prev {
+    left: -60px;
+}
+#packages .carousel-control-next {
+    right: -60px;
+}
+#packages .spain_banner{
+    background:#2180C4 ;
+    padding: 10px 0;
+    color: #fff;
+    width:90%;
+    font-family: 'Cairo', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: calc(50% - (90%/2));
+    border-radius: 6px;
+    position: relative;
+    top: -22px;
+}
+#packages .spain_banner > span{
+    display: block;
+    border-bottom: 2px solid rgba(0,64,133,0.33);
+    font-size:20px;
+    font-weight: normal;
+    font-family: 'Cairo', sans-serif;
+    padding-bottom: 5px;
+}
+#companies{
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(rgb(8, 80, 120), rgb(133, 216, 206));
+    margin-top: 50px;
+}
+#companies h2{
+    padding:40px;
+    font-family: 'Cairo', sans-serif;
+    color: #fff;
+}
+#companies .carousel-control-next,
+#companies .carousel-control-prev {
+    top:calc(50% - (12%/2));
+    width: 5%;
+    height: 7%;
+    color: #fff;
+    text-align: center;
+    opacity: .9;
+}
+#companies .bg-white {
+    padding: 10px 10px;
+    border-radius: 6px;
+}
+#application{
+    background-color:#f8f8f8;
+    height: 300px;
+    font-family: 'Cairo', sans-serif;
+    text-align: right;
+    border-bottom: 1px solid rgba(136,136,132,.6);
+}
+#application h4{
+    padding-top: 40px;
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+}
+#application h5{
+    font-size: 18px;
+}
+#footer{
+    background-color: rgba(233,236,239,0.74);
+    width: 100%;
+    height: 300px;
+    padding-top: 40px;
+    border-bottom: 1px solid rgba(136,136,132,.2);
+}
+#footer section[class="content"]{
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    padding: 10px 0;
+    border: 1px solid rgba(136,136,132,.6);
+    border-radius: 6px;
+    width: 40%;
+    margin-left: calc(50% - (40%/2));
+}
+#footer ul[id="contact"] li > i{
+    background: #02A3E6;
+    color: #fff;
+    width:20px;
+    height: 20px;
+    border-radius: 3px;
+    padding-top: 2px;
+}
+
+ #footer ul[id="social"] li:nth-child(1) {
+     background:#36539A;
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     padding-top: 8px;
+     color: #fff;
+}
+#footer ul[id="social"] li:nth-child(2) {
+    background:#02A3E6;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding-top: 8px;
+    color: #fff;
+}
+#footer ul[id="social"] li:nth-child(3) {
+    background:#DCDDDD;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding-top: 8px;
+    color: #BA1C1B;
+}
+#footer ul[id="social"] li:nth-child(4) {
+    background:#C02129;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding-top: 8px;
+    color: #fff;
+}
+#footer ul[id="social"] li:nth-child(5) {
+    background:#DCDDDD;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding-top: 8px;
+    color: #7E3789;
+}
+#footer ul[id="social"] li:hover{
+    transition: all ease-in-out 0.5s;
+    opacity: 0.7;
+    cursor: pointer;
+}
+#footer ul[id="menu_list"] li{
+    font-family: 'Cairo', sans-serif;
+    cursor: pointer;
+    color:#02A3E6;
+}
+#footer ul[id="menu_list"] li:hover{
+    color:#444;
+    transition: all ease-in-out 0.5s;
+}
+#copyright{
+    font-family: 'Cairo', sans-serif;
+}

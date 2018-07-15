@@ -1,0 +1,634 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
+    <!--script in header of flags -->
+    <link rel="stylesheet" type="text/css" href="css/dd.css" />
+    <link rel="stylesheet" type="text/css" href="css/flags.css" />
+    <!--fontawesome style sheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!--owl style sheet -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/owl.theme.default.css" type="text/css" media="all">
+    <!--main style sheet -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/querry.css" type="text/css" media="all">
+    <title>Travlines</title>
+</head>
+<body>
+<section id="top" class="fixed-top">
+<div class="language ">
+    <select name="countries" id="countries" style="width:200px;margin-left: calc(50% - (200px/2)) !important;">
+        <option value='eg' data-image="img/blank.gif" data-imagecss="flag eg" data-title="Egypt">انت تدخل من </option>
+        <option value='ad' data-image="img/blank.gif" data-imagecss="flag ad" data-title="Andorra">Andorra</option>
+        <option value='ae' data-image="img/blank.gif" data-imagecss="flag ae" data-title="United Arab Emirates">United Arab Emirates</option>
+        <option value='af' data-image="img/blank.gif" data-imagecss="flag af" data-title="Afghanistan">Afghanistan</option>
+        <option value='ag' data-image="img/blank.gif" data-imagecss="flag ag" data-title="Antigua and Barbuda">Antigua and Barbuda</option>
+        <option value='ai' data-image="img/blank.gif" data-imagecss="flag ai" data-title="Anguilla">Anguilla</option>
+        <option value='al' data-image="img/blank.gif" data-imagecss="flag al" data-title="Albania">Albania</option>
+        <option value='am' data-image="img/blank.gif" data-imagecss="flag am" data-title="Armenia">Armenia</option>
+        <option value='an' data-image="img/blank.gif" data-imagecss="flag an" data-title="Netherlands Antilles">Netherlands Antilles</option>
+    </select>
+</div>
+<nav class="navbar navbar-expand-lg  navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <img src="img/travlines-logo.png" width="200" height="50" alt="main_logo">
+    </a>
+    <ul class="navbar-nav mr-auto d-none" id="toggle_menu">
+        <li class="nav-item hvr-underline-from-center">افضل العروض</li>
+        <li class="nav-item hvr-underline-from-center">السياحه الداخليه</li>
+        <li class="nav-item hvr-underline-from-center">عروض حول العالم</li>
+        <li class="nav-item hvr-underline-from-center">رحلات نيليه</li>
+        <li class="nav-item hvr-underline-from-center">رحلات نيليه</li>
+        <li class="nav-item hvr-underline-from-center">حجز طيران</li>
+        <li class="nav-item hvr-underline-from-center">حجز فنادق</li>
+    </ul>
+    <button class="navbar-toggler" type="button" data-toggle="collapse"   data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal"  data-target="#exampleModalLong"> <i class="fas fa-user"></i> انشاء حساب </button>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" id="sign">دخول </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"> <i class="fas fa-cog"></i> الاعدادات </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1"  role="dialog"  aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-right" id="exampleModalLongTitle">انشاء حساب جديد</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container-fluid" id="banner">
+    <div class="row">
+        <div class="col-12">
+            <div class="search-bar">
+                <h4 class="text-center pt-4 mb-2">وفر وقتك و ابحث بالدوله او المدينه !</h4>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
+                    </div>
+                    <select class="custom-select" id="inputGroupSelect03">
+                        <option selected>كل الاماكن</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <select class="custom-select" id="inputGroupSelect04">
+                        <option selected>كل الدول</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <section id="range">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div id="slider-range"></div>
+                            </div>
+                        </div>
+                        <div class="row slider-labels">
+                            <div class="col-6 caption">
+                                <strong>ج.م</strong> <span id="slider-range-value1"></span>
+                            </div>
+                            <div class="col-6 text-right caption">
+                                <span id="slider-range-value2"></span> <strong>ج.م</strong>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <form>
+                                    <input type="hidden" name="min-value" value="">
+                                    <input type="hidden" name="max-value" value="">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+            <div class="row mt-5" id="categories">
+                <div class="col-2">
+                    <section id="best-offers">
+                        افضل العروض<i class="fas fa-star"></i>
+                    </section>
+                </div>
+                <div class="col-2">
+                    <section id="inside-tourism">
+                        السياحه الداخليه<i class="fas fa-bus-alt"></i>
+                    </section>
+                </div>
+                <div class="col-2">
+                    <section id="offers">
+                        عروض حول العالم<i class="fas fa-globe-americas"></i>
+                    </section>
+                </div>
+                <div class="col-2">
+                    <section id="nile">
+                        رحلات نيليه<i class="fas fa-ship"></i>
+                    </section>
+                </div>
+                <div class="col-2">
+                    <section id="airplane">
+                        حجز طيران<i class="fas fa-plane"></i>
+                    </section>
+                </div>
+                <div class="col-2">
+                    <section id="hotels">
+                        حجز فنادق<i class="fas fa-bed"></i>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container" id="packages">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="text-center">احلى البقات</h2>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card-group">
+                        <div class="card">
+                            <img class="card-img-top" src="img/test2.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" data-name="turk">تركيا</h5>
+                                <ul class="list-unstyled">
+                                <li class="media">
+                                    <img class="ml-3" src="img/test3.jpeg" width="120" height="80" alt="Generic placeholder image">
+                                    <div class="media-body">
+                                        <h5 class="mt-0 mb-1"> فندق لمار زوتيف<i class="fas fa-star"></i></h5>
+                                        <p>7 ليالى و 6 ايام من :1000ج.م</p>
+                                    </div>
+                                </li>
+                                    <li class="media">
+                                    <img class="ml-3" src="img/test3.jpeg" width="120" height="80" alt="Generic placeholder image">
+                                    <div class="media-body">
+                                        <h5 class="mt-0 mb-1"> فندق لمار زوتيف<i class="fas fa-star"></i></h5>
+                                        <p>7 ليالى و 6 ايام من :1000ج.م</p>
+                                    </div>
+                                </li>
+                                    <li class="media">
+                                    <img class="ml-3" src="img/test3.jpeg" width="120" height="80" alt="Generic placeholder image">
+                                    <div class="media-body">
+                                        <h5 class="mt-0 mb-1"> فندق لمار زوتيف<i class="fas fa-star"></i></h5>
+                                        <p>7 ليالى و 6 ايام من :1000ج.م</p>
+                                    </div>
+                                </li>
+                                    <li>
+                                        <button type="button" class="btn btn-light btn-sm"> عرض الكل </button>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="img/test2.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="text-center spain_banner" data-name="spain"><span>اسبانيا</span>7 ليالى و 6 ايام من :1000ج.م</h5>
+                                <ul class="list-unstyled">
+                                    <li class="media">
+                                        <img class="ml-3" src="img/test3.jpeg" width="120" height="80" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <h5 class="mt-0 mb-1"> فندق لمار زوتيف<i class="fas fa-star"></i></h5>
+                                            <p>7 ليالى و 6 ايام من :1000ج.م</p>
+                                        </div>
+                                    </li>
+                                    <li class="media">
+                                        <img class="ml-3" src="img/test3.jpeg" width="120" height="80" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <h5 class="mt-0 mb-1"> فندق لمار زوتيف<i class="fas fa-star"></i></h5>
+                                            <p>7 ليالى و 6 ايام من :1000ج.م</p>
+                                        </div>
+                                    </li>
+                                    <li class="media">
+                                        <img class="ml-3" src="img/test3.jpeg" width="120" height="80" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <h5 class="mt-0 mb-1"> فندق لمار زوتيف<i class="fas fa-star"></i></h5>
+                                            <p>7 ليالى و 6 ايام من :1000ج.م</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn btn-primary btn-sm"> عرض الكل </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="img/test2.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" data-name="italy">ايطليا</h5>
+                                <ul class="list-unstyled">
+                                    <li class="media">
+                                        <img class="ml-3" src="img/test3.jpeg" width="120" height="80" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <h5 class="mt-0 mb-1"> فندق لمار زوتيف<i class="fas fa-star"></i></h5>
+                                            <p>7 ليالى و 6 ايام من :1000ج.م</p>
+                                        </div>
+                                    </li>
+                                    <li class="media">
+                                        <img class="ml-3" src="img/test3.jpeg" width="120" height="80" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <h5 class="mt-0 mb-1"> فندق لمار زوتيف<i class="fas fa-star"></i></h5>
+                                            <p>7 ليالى و 6 ايام من :1000ج.م</p>
+                                        </div>
+                                    </li>
+                                    <li class="media">
+                                        <img class="ml-3" src="img/test3.jpeg" width="120" height="80" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <h5 class="mt-0 mb-1"> فندق لمار زوتيف<i class="fas fa-star"></i></h5>
+                                            <p>7 ليالى و 6 ايام من :1000ج.م</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn btn-light btn-sm"> عرض الكل </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card-group">
+                        <div class="card">
+                            <img class="card-img-top" src="img/test2.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" data-name="turk">تركيا</h5>
+                                <ul class="list-unstyled">
+                                    <li class="media">
+                                        <img class="ml-3" src="img/test2.jpeg" width="120" height="80" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <h5 class="mt-0 mb-1"> فندق لمار زوتيف<i class="fas fa-star"></i></h5>
+                                            <p>7 ليالى و 6 ايام من :1000ج.م</p>
+                                        </div>
+                                    </li>
+                                    <li class="media">
+                                        <img class="ml-3" src="img/test2.jpeg" width="120" height="80" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <h5 class="mt-0 mb-1"> فندق لمار زوتيف<i class="fas fa-star"></i></h5>
+                                            <p>7 ليالى و 6 ايام من :1000ج.م</p>
+                                        </div>
+                                    </li>
+                                    <li class="media">
+                                        <img class="ml-3" src="img/test2.jpeg" width="120" height="80" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <h5 class="mt-0 mb-1"> فندق لمار زوتيف<i class="fas fa-star"></i></h5>
+                                            <p>7 ليالى و 6 ايام من :1000ج.م</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn btn-light btn-sm"> عرض الكل </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="img/test2.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="text-center spain_banner" data-name="spain"><span>اسبانيا</span>7 ليالى و 6 ايام من :1000ج.م</h5>
+                                <ul class="list-unstyled">
+                                    <li class="media">
+                                        <img class="ml-3" src="img/test2.jpeg" width="120" height="80" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <h5 class="mt-0 mb-1"> فندق لمار زوتيف<i class="fas fa-star"></i></h5>
+                                            <p>7 ليالى و 6 ايام من :1000ج.م</p>
+                                        </div>
+                                    </li>
+                                    <li class="media">
+                                        <img class="ml-3" src="img/test2.jpeg" width="120" height="80" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <h5 class="mt-0 mb-1"> فندق لمار زوتيف<i class="fas fa-star"></i></h5>
+                                            <p>7 ليالى و 6 ايام من :1000ج.م</p>
+                                        </div>
+                                    </li>
+                                    <li class="media">
+                                        <img class="ml-3" src="img/test2.jpeg" width="120" height="80" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <h5 class="mt-0 mb-1"> فندق لمار زوتيف<i class="fas fa-star"></i></h5>
+                                            <p>7 ليالى و 6 ايام من :1000ج.م</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn btn-primary btn-sm"> عرض الكل </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="img/test2.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" data-name="italy">ايطليا</h5>
+                                <ul class="list-unstyled">
+                                    <li class="media">
+                                        <img class="ml-3" src="img/test2.jpeg" width="120" height="80" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <h5 class="mt-0 mb-1"> فندق لمار زوتيف<i class="fas fa-star"></i></h5>
+                                            <p>7 ليالى و 6 ايام من :1000ج.م</p>
+                                        </div>
+                                    </li>
+                                    <li class="media">
+                                        <img class="ml-3" src="img/test2.jpeg" width="120" height="80" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <h5 class="mt-0 mb-1"> فندق لمار زوتيف<i class="fas fa-star"></i></h5>
+                                            <p>7 ليالى و 6 ايام من :1000ج.م</p>
+                                        </div>
+                                    </li>
+                                    <li class="media">
+                                        <img class="ml-3" src="img/test2.jpeg" width="120" height="80" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <h5 class="mt-0 mb-1"> فندق لمار زوتيف<i class="fas fa-star"></i></h5>
+                                            <p>7 ليالى و 6 ايام من :1000ج.م</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn btn-light btn-sm"> عرض الكل </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card-group">
+                        <div class="card">
+                            <img class="card-img-top" src="img/test2.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" data-name="turk">تركيا</h5>
+                                <ul class="list-unstyled">
+                                    <li class="media">
+                                        <img class="ml-3" src="img/test1.jpeg" width="120" height="80" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <h5 class="mt-0 mb-1"> فندق لمار زوتيف<i class="fas fa-star"></i></h5>
+                                            <p>7 ليالى و 6 ايام من :1000ج.م</p>
+                                        </div>
+                                    </li>
+                                    <li class="media">
+                                        <img class="ml-3" src="img/test1.jpeg" width="120" height="80" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <h5 class="mt-0 mb-1"> فندق لمار زوتيف<i class="fas fa-star"></i></h5>
+                                            <p>7 ليالى و 6 ايام من :1000ج.م</p>
+                                        </div>
+                                    </li>
+                                    <li class="media">
+                                        <img class="ml-3" src="img/test1.jpeg" width="120" height="80" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <h5 class="mt-0 mb-1"> فندق لمار زوتيف<i class="fas fa-star"></i></h5>
+                                            <p>7 ليالى و 6 ايام من :1000ج.م</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn btn-light btn-sm"> عرض الكل </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="img/test2.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="text-center spain_banner" data-name="spain"><span>اسبانيا</span>7 ليالى و 6 ايام من :1000ج.م</h5>
+                                <ul class="list-unstyled">
+                                    <li class="media">
+                                        <img class="ml-3" src="img/test1.jpeg" width="120" height="80" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <h5 class="mt-0 mb-1"> فندق لمار زوتيف<i class="fas fa-star"></i></h5>
+                                            <p>7 ليالى و 6 ايام من :1000ج.م</p>
+                                        </div>
+                                    </li>
+                                    <li class="media">
+                                        <img class="ml-3" src="img/test1.jpeg" width="120" height="80" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <h5 class="mt-0 mb-1"> فندق لمار زوتيف<i class="fas fa-star"></i></h5>
+                                            <p>7 ليالى و 6 ايام من :1000ج.م</p>
+                                        </div>
+                                    </li>
+                                    <li class="media">
+                                        <img class="ml-3" src="img/test1.jpeg" width="120" height="80" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <h5 class="mt-0 mb-1"> فندق لمار زوتيف<i class="fas fa-star"></i></h5>
+                                            <p>7 ليالى و 6 ايام من :1000ج.م</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn btn-primary btn-sm"> عرض الكل </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="img/test2.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" data-name="italy">ايطليا</h5>
+                                <ul class="list-unstyled">
+                                    <li class="media">
+                                        <img class="ml-3" src="img/test1.jpeg" width="120" height="80" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <h5 class="mt-0 mb-1"> فندق لمار زوتيف<i class="fas fa-star"></i></h5>
+                                            <p>7 ليالى و 6 ايام من :1000ج.م</p>
+                                        </div>
+                                    </li>
+                                    <li class="media">
+                                        <img class="ml-3" src="img/test1.jpeg" width="120" height="80" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <h5 class="mt-0 mb-1"> فندق لمار زوتيف<i class="fas fa-star"></i></h5>
+                                            <p>7 ليالى و 6 ايام من :1000ج.م</p>
+                                        </div>
+                                    </li>
+                                    <li class="media">
+                                        <img class="ml-3" src="img/test1.jpeg" width="120" height="80" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <h5 class="mt-0 mb-1"> فندق لمار زوتيف<i class="fas fa-star"></i></h5>
+                                            <p>7 ليالى و 6 ايام من :1000ج.م</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn btn-light btn-sm"> عرض الكل </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" id="companies">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="text-center">شركات الدعايه</h2>
+            <div id="slide" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container bg-white">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img class="d-block w-100" src="img/test1.jpeg" alt="First slide">
+                                </div>
+                                <div class="col-2">
+                                    <img class="d-block w-100" src="img/test1.jpeg" alt="First slide">
+                                </div>
+                                <div class="col-2">
+                                    <img class="d-block w-100" src="img/test1.jpeg" alt="First slide">
+                                </div>
+                                <div class="col-2">
+                                    <img class="d-block w-100" src="img/test1.jpeg" alt="First slide">
+                                </div>
+                                <div class="col-2">
+                                    <img class="d-block w-100" src="img/test1.jpeg" alt="First slide">
+                                </div>
+                                <div class="col-2">
+                                    <img class="d-block w-100" src="img/test1.jpeg" alt="First slide">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container bg-white">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img class="d-block w-100" src="img/test1.jpeg" alt="First slide">
+                                </div>
+                                <div class="col-2">
+                                    <img class="d-block w-100" src="img/test1.jpeg" alt="First slide">
+                                </div>
+                                <div class="col-2">
+                                    <img class="d-block w-100" src="img/test1.jpeg" alt="First slide">
+                                </div>
+                                <div class="col-2">
+                                    <img class="d-block w-100" src="img/test1.jpeg" alt="First slide">
+                                </div>
+                                <div class="col-2">
+                                    <img class="d-block w-100" src="img/test1.jpeg" alt="First slide">
+                                </div>
+                                <div class="col-2">
+                                    <img class="d-block w-100" src="img/test1.jpeg" alt="First slide">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#slide" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#slide" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" id="application">
+    <div class="row">
+        <div class="col-4 offset-1 mt-5">
+            <img src="img/hand.png" class="d-block w-100" alt="apple_strore">
+        </div>
+            <div class="col-5">
+                <h4>قم بتحميل البرنامج مجانا:</h4>
+                <h5>وتمتع بالبحث و الحجز والاطلاع على جميع عروض الشركه الخاصه</h5>
+                <div class="row disappear">
+                <div class="col disappear">
+                    <img src="img/apple.png" class="d-block w-100" alt="apple_strore">
+                </div>
+                <div class="col disappear">
+                    <img src="img/apple.png" class="d-block w-100" alt="google_strore">
+                </div>
+                </div>
+            </div>
+
+        </div>
+</div>
+
+<footer class="container-fluid" id="footer">
+     <div class="row">
+         <div class="col-12">
+             <section class="content">
+             <h6>للاعلان على ترافل لاين</h6>
+                 <ul id="contact" class="list-unstyled list-inline">
+                     <li class="list-inline-item">201003335588 <i class="fas fa-phone-square"></i></li>
+                     <li class="list-inline-item">ads@travlines.com <i class="fas fa-globe"></i></li>
+                 </ul>
+             </section>
+                    <ul id="social" class="list-unstyled list-inline text-center p-4">
+                        <li class="list-inline-item"><i class="fab fa-facebook fa-2x"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-twitter fa-2x"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-youtube fa-2x"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-pinterest fa-2x"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-instagram fa-2x"></i></li>
+                    </ul>
+             <ul id="menu_list" class="list-unstyled list-inline text-center">
+                 <li class="list-inline-item">اتصل بنا</li>
+                 <li class="list-inline-item">نبذه عننا</li>
+                 <li class="list-inline-item">الحج و العمره</li>
+                 <li class="list-inline-item">سياحه داخليه</li>
+                 <li class="list-inline-item">بقات حول العالم</li>
+                 <li class="list-inline-item">الاقل اسعارا</li>
+                 <li class="list-inline-item">الاكثر مبيعا</li>
+                 <li class="list-inline-item">افضل العروض</li>
+                 <li class="list-inline-item">كل العروض</li>
+             </ul>
+         </div>
+     </div>
+</footer>
+
+<div class="container-fluid" id="copyright">
+    <div class="row">
+        <div class="col-12">
+            <p class="text-center"> جميع الحقوق محفوظه 2018<img src="img/travlines-logo.png" width="100" class="d-inline-block" alt="logo"></p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script src="js/jquery-1.8.2.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/jquery.dd.min.js"></script>
+<script src="js/plugins.js"></script>
+</body>
+</html>

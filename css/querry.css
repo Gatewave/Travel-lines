@@ -1,0 +1,134 @@
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    body{overflow-x: hidden;}
+    #banner > .row > div[class="col-12"] {height: 410px;background-position: center;}
+    nav #toggle_menu{display: none !important;}
+    div#categories {display: none !important;}
+    div.search-bar {
+        width: 100%;
+        height: 170px;
+        margin-left: calc(50% - (100%/2));
+        margin-top: calc(50% - (0%/2));
+    }
+    div.search-bar h4{font-size: 14px;}
+    div.search-bar > .input-group {
+        width: 80%;
+        margin-left: calc(50% - (80%/2));
+        font-family: 'Cairo', sans-serif;
+    }
+    .disappear{display: none;}
+    #footer section[class="content"] {
+        padding: 10px 0;
+        width: 90%;
+        margin-left: calc(50% - (90%/2));
+    }
+    div#application.container-fluid div.row div.col-5 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    div#application.container-fluid div.row div.col-4.offset-1.mt-5{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    ul#social {
+        padding: 8px !important;
+    }
+    #footer ul[id="menu_list"] li {
+        font-size: 11px;
+    }
+    #copyright p.text-center {
+        font-size: 11px;
+    }
+    #packages h5[data-name="italy"]::before {
+        top: 187px;
+    }
+    #packages h5[data-name="turk"]::before {
+        top: 166px;
+    }
+
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    body{overflow-x: hidden;}
+    #banner > .row > div[class="col-12"] {height: 410px;background-position: center;}
+    div#categories {display: none !important;}
+
+    nav #toggle_menu{
+        display: none !important;
+    }
+    .card-group {
+        flex-flow: column wrap;
+    }
+
+    div.search-bar {
+        width: 100%;
+        height: 144px;
+        margin-left: calc(50% - (100%/2));
+        margin-top: calc(50% - (49%/2));
+    }
+    #footer section[class="content"] {
+        padding: 10px 0;
+        width: 90%;
+        margin-left: calc(50% - (90%/2));
+    }
+    div.search-bar h4{font-size: 14px;}
+    #packages > .row > div[class="col-12"] > h2:before {right: 349px;}
+    #packages > .row > div[class="col-12"] > h2:after {left: 349px;}
+
+}
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    #banner > .row > div[class="col-12"] {
+        background-size: cover;
+    }
+    nav #toggle_menu{
+        display: none !important;
+    }
+    div.search-bar {
+        width: 530px;
+        height: 200px;
+        margin-left: calc(50% - (530px / 2));
+        margin-top: calc(50% - (400px / 2));
+    }
+    /*.card-group {*/
+        /*flex-flow: column wrap;*/
+    /*}*/
+    section#hotels{
+    height: 80px;
+    font-size: 12px;
+    }
+    section#airplane{
+    height: 80px;
+    font-size: 12px;
+    }
+    section#nile{
+    height: 80px;
+    font-size: 12px;
+    }
+    section#offers{
+    height: 80px;
+    font-size: 12px;
+    }
+    section#inside-tourism{
+    height: 80px;
+    font-size: 12px;
+    }
+    section#best-offers{
+    height: 80px;
+    font-size: 12px;
+    }
+    #packages > .row > div[class="col-12"] > h2:before {right: 439px;}
+    #packages > .row > div[class="col-12"] > h2:after {left: 439px;}
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+}
