@@ -471,16 +471,6 @@ section#best-offers:hover{
     border-top-right-radius: 3px;
     border-top-left-radius: 3px;
 }
-/*#packages h5[data-name="spain"]::before{*/
-    /*content: "";*/
-    /*width: 100px;*/
-    /*height: 50px;*/
-    /*background-color:#8A4F9F;*/
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*left: 0;*/
-    /*z-index: 222;*/
-/*}*/
 #packages h5[data-name="italy"]::before{
     content: "3 ليالى من 400ج.م";
     width: 121px;
@@ -489,7 +479,7 @@ section#best-offers:hover{
     color: #fff;
     background-color: #8A4F9F;
     position: absolute;
-    top: 202px;
+    top: 233px;
     left: 0;
     z-index: 222;
     border-top-right-radius: 3px;
@@ -502,7 +492,7 @@ section#best-offers:hover{
 
 #packages .carousel-control-next,
 #packages .carousel-control-prev {
-    top:calc(50% - (12%/2));
+    top:calc(50% - (6%/2));
     background: #8A4F9F;
     width: 5%;
     height: 7%;
