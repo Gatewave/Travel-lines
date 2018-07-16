@@ -1,6 +1,6 @@
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
-    body{overflow-x: hidden;}
+    body{margin: 0 auto}
     #banner > .row > div[class="col-12"] {height: 410px;background-position: center;}
     nav #toggle_menu{display: none !important;}
     div#categories {display: none !important;}
@@ -45,22 +45,38 @@
     #packages h5[data-name="turk"]::before {
         top: 166px;
     }
-
+    .navbar-nav {
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    nav #sign{
+        margin: 0 auto;
+        padding-left: 10px;
+    }
+    li.nav-item{
+        margin: 0 auto;
+    }
+    #packages > .row > div[class="col-12"] > h2:before {right: 288px; width:90px}
+    #packages > .row > div[class="col-12"] > h2:after {left: 288px; width:90px}
+    #packages .carousel-control-next {
+        right: 0;
+    }
+    #packages .carousel-control-prev {
+        left: 0;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
-    body{overflow-x: hidden;}
+    body{margin: 0 auto}
     #banner > .row > div[class="col-12"] {height: 410px;background-position: center;}
     div#categories {display: none !important;}
-
     nav #toggle_menu{
         display: none !important;
     }
     .card-group {
         flex-flow: column wrap;
     }
-
     div.search-bar {
         width: 100%;
         height: 144px;
@@ -73,13 +89,31 @@
         margin-left: calc(50% - (90%/2));
     }
     div.search-bar h4{font-size: 14px;}
-    #packages > .row > div[class="col-12"] > h2:before {right: 349px;}
-    #packages > .row > div[class="col-12"] > h2:after {left: 349px;}
-
+    #packages > .row > div[class="col-12"] > h2:before {right: 339px;}
+    #packages > .row > div[class="col-12"] > h2:after {left: 339px;}
+    .navbar-nav {
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    nav #sign{
+        margin: 0 auto;
+        padding-left: 10px;
+    }
+    li.nav-item{
+        margin: 0 10px;
+    }
+    #packages .carousel-control-next {
+        right: 0;
+    }
+    #packages .carousel-control-prev {
+        left: 0;
+    }
 }
+
+
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
-
+    body{margin: 0 auto}
     #banner > .row > div[class="col-12"] {
         background-size: cover;
     }
@@ -92,41 +126,137 @@
         margin-left: calc(50% - (530px / 2));
         margin-top: calc(50% - (400px / 2));
     }
-    /*.card-group {*/
-        /*flex-flow: column wrap;*/
-    /*}*/
     section#hotels{
-    height: 80px;
-    font-size: 12px;
+        height: 60px;
+        font-size: 12px;
     }
     section#airplane{
-    height: 80px;
-    font-size: 12px;
+        height: 60px;
+        font-size: 12px;
     }
     section#nile{
-    height: 80px;
-    font-size: 12px;
+        height: 60px;
+        font-size: 12px;
     }
     section#offers{
-    height: 80px;
-    font-size: 12px;
+        height: 60px;
+        font-size: 12px;
     }
     section#inside-tourism{
-    height: 80px;
-    font-size: 12px;
+        height: 60px;
+        font-size: 12px;
     }
     section#best-offers{
-    height: 80px;
-    font-size: 12px;
+        height: 60px;
+        font-size: 12px;
     }
     #packages > .row > div[class="col-12"] > h2:before {right: 439px;}
     #packages > .row > div[class="col-12"] > h2:after {left: 439px;}
-}
+    .navbar-nav {
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    nav #sign{
+        margin: 0 auto;
+        padding-left: 10px;
+    }
+    li.nav-item{
+        margin: 0 10px;
+    }
+    #packages .carousel-control-next {
+        right: 0;
+    }
+    #packages .carousel-control-prev {
+        left: 0;
+    }
+
+    }
+
+
+
+
+
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
+    body{margin: 0 auto}
+    #packages > .row > div[class="col-12"] > h2:before {right: 200px;}
+    #packages > .row > div[class="col-12"] > h2:after {left: 200px;}
+    div.search-bar h4{font-size: 17px;}
+    div.search-bar > .input-group {
+        width: 80%;
+        margin-left: calc(50% - (80%/2));
+        font-family: 'Cairo', sans-serif;
+    }
+    div.search-bar {
+        width: 100%;
+        height: 150px;
+        margin-left: calc(50% - (100%/2));
+        margin-top: calc(50% - (43%/2));
+    }
+    #packages h5[data-name="italy"]::before {
+        top: 161px;
+        width: 106px;
+    }
+    #packages h5[data-name="turk"]::before {
+        top: 140px;
+    }
+    #packages .carousel-control-prev {
+        left: -30px;
+    }
+    #packages .carousel-control-next {
+        right: -30px;
+    }
+    .card{border: 0}
+    section#hotels{
+        font-size: 13px !important;
+        text-align: right;
+    }
+    section#airplane{
+        font-size: 13px !important;
+        text-align: right;
+    }
+    section#nile{
+        font-size: 13px !important;
+        text-align: right;
+    }
+    section#offers{
+        font-size: 13px !important;
+        text-align: right;
+    }
+    section#inside-tourism{
+        font-size: 13px !important;
+        text-align: right;
+    }
+    section#best-offers{
+        font-size: 13px !important;
+        text-align: right;
+    }
+    div#categories i {
+        padding: 5px 6px;
+        margin-right: 4px;
+    }
+    nav #toggle_menu {
+        font-size: 12px;
+        text-align: center;
+    }
+    .hvr-underline-from-center:before {
+        top:56px;
+    }
+    #packages .carousel-control-next {
+        right: 0;
+    }
+    #packages .carousel-control-prev {
+        left: 0;
+    }
 
-}
+    }
+
+
+
+
+
+
 
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
