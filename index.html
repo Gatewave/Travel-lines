@@ -20,7 +20,7 @@
     <title>Travlines</title>
 </head>
 <body>
-<section id="top" class="fixed-top">
+<section id="top" >
 <div class="language ">
     <select name="countries" id="countries" style="width:200px;margin-left: calc(50% - (200px/2)) !important;">
         <option value='eg' data-image="img/blank.gif" data-imagecss="flag eg" data-title="Egypt">انت تدخل من </option>
@@ -34,24 +34,30 @@
         <option value='an' data-image="img/blank.gif" data-imagecss="flag an" data-title="Netherlands Antilles">Netherlands Antilles</option>
     </select>
 </div>
-<nav class="navbar navbar-expand-lg  navbar-light bg-light">
+<nav class="navbar navbar-expand-lg  navbar-light bg-light" >
     <a class="navbar-brand" href="#">
         <img src="img/travlines-logo.png" width="200" height="50" alt="main_logo">
     </a>
-    <ul class="navbar-nav mr-auto d-none" id="toggle_menu">
-        <li class="nav-item hvr-underline-from-center">حجز فنادق</li>
-        <li class="nav-item hvr-underline-from-center">حجز طيران</li>
-        <li class="nav-item hvr-underline-from-center">رحلات نيليه</li>
-        <li class="nav-item hvr-underline-from-center">عروض حول العالم</li>
-        <li class="nav-item hvr-underline-from-center">السياحه الداخليه</li>
-        <li class="nav-item hvr-underline-from-center">افضل العروض</li>
-    </ul>
+    <!--<ul class="navbar-nav mr-auto d-none" id="toggle_menu">-->
+        <!--<li class="nav-item hvr-underline-from-center">حجز فنادق</li>-->
+        <!--<li class="nav-item hvr-underline-from-center">حجز طيران</li>-->
+        <!--<li class="nav-item hvr-underline-from-center">رحلات نيليه</li>-->
+        <!--<li class="nav-item hvr-underline-from-center">عروض حول العالم</li>-->
+        <!--<li class="nav-item hvr-underline-from-center">السياحه الداخليه</li>-->
+        <!--<li class="nav-item hvr-underline-from-center">افضل العروض</li>-->
+    <!--</ul>-->
     <button class="navbar-toggler" type="button" data-toggle="collapse"   data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item hvr-underline-from-center toggle_menu">حجز فنادق</li>
+            <li class="nav-item hvr-underline-from-center toggle_menu">حجز طيران</li>
+            <li class="nav-item hvr-underline-from-center toggle_menu">رحلات نيليه</li>
+            <li class="nav-item hvr-underline-from-center toggle_menu">عروض حول العالم</li>
+            <li class="nav-item hvr-underline-from-center toggle_menu">السياحه الداخليه</li>
+            <li class="nav-item hvr-underline-from-center toggle_menu">افضل العروض</li>
             <li class="nav-item">
                 <button type="button" class="btn btn-primary btn-sm" data-toggle="modal"  data-target="#exampleModalLong"> <i class="fas fa-user"></i> انشاء حساب </button>
             </li>
@@ -166,10 +172,10 @@
         </div>
     </div>
 </div>
-<div class="container" id="packages">
+<div class="container-fluid" id="packages">
     <div class="row">
         <div class="col-12">
-            <h2 class="text-center">احلى البقات</h2>
+            <h2 class="text-center">احلى العروض</h2>
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -496,23 +502,8 @@
                     <div class="carousel-item active">
                         <div class="container bg-white">
                             <div class="row">
-                                <div class="col-2">
-                                    <img class="d-block w-100" src="img/test1.jpeg" alt="First slide">
-                                </div>
-                                <div class="col-2">
-                                    <img class="d-block w-100" src="img/test1.jpeg" alt="First slide">
-                                </div>
-                                <div class="col-2">
-                                    <img class="d-block w-100" src="img/test1.jpeg" alt="First slide">
-                                </div>
-                                <div class="col-2">
-                                    <img class="d-block w-100" src="img/test1.jpeg" alt="First slide">
-                                </div>
-                                <div class="col-2">
-                                    <img class="d-block w-100" src="img/test1.jpeg" alt="First slide">
-                                </div>
-                                <div class="col-2">
-                                    <img class="d-block w-100" src="img/test1.jpeg" alt="First slide">
+                                <div class="col-sm-12 col-md-2">
+                                    <img class="d-block w-100" src="img/01.svg" alt="First slide">
                                 </div>
                             </div>
                         </div>
@@ -520,27 +511,31 @@
                     <div class="carousel-item">
                         <div class="container bg-white">
                             <div class="row">
-                                <div class="col-2">
-                                    <img class="d-block w-100" src="img/test1.jpeg" alt="First slide">
-                                </div>
-                                <div class="col-2">
-                                    <img class="d-block w-100" src="img/test1.jpeg" alt="First slide">
-                                </div>
-                                <div class="col-2">
-                                    <img class="d-block w-100" src="img/test1.jpeg" alt="First slide">
-                                </div>
-                                <div class="col-2">
-                                    <img class="d-block w-100" src="img/test1.jpeg" alt="First slide">
-                                </div>
-                                <div class="col-2">
-                                    <img class="d-block w-100" src="img/test1.jpeg" alt="First slide">
-                                </div>
-                                <div class="col-2">
-                                    <img class="d-block w-100" src="img/test1.jpeg" alt="First slide">
+                                <div class="col-sm-12 col-md-2">
+                                    <img class="d-block w-100" src="img/01.svg" alt="First slide">
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="carousel-item">
+                        <div class="container bg-white">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-2">
+                                    <img class="d-block w-100" src="img/01.svg" alt="First slide">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container bg-white">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-2">
+                                    <img class="d-block w-100" src="img/01.svg" alt="First slide">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <a class="carousel-control-prev" href="#slide" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -557,10 +552,10 @@
 
 <div class="container-fluid" id="application">
     <div class="row">
-        <div class="col-4 offset-1 mt-5">
+        <div class="col-md-4 offset-1 col-sm-12 mt-5">
             <img src="img/hand.png" class="d-block w-100" alt="apple_strore">
         </div>
-            <div class="col-5">
+            <div class="col-md-5 col-sm-12">
                 <h4>قم بتحميل البرنامج مجانا:</h4>
                 <h5>وتمتع بالبحث و الحجز والاطلاع على جميع عروض الشركه الخاصه</h5>
                 <div class="row disappear">

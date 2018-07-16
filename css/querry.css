@@ -46,8 +46,8 @@
         top: 166px;
     }
     .navbar-nav {
-        -ms-flex-direction: row;
-        flex-direction: row;
+        -ms-flex-direction: column;
+        flex-direction: column;
     }
     nav #sign{
         margin: 0 auto;
@@ -55,15 +55,17 @@
     }
     li.nav-item{
         margin: 0 auto;
+        display: block
     }
-    #packages > .row > div[class="col-12"] > h2:before {right: 288px; width:90px}
-    #packages > .row > div[class="col-12"] > h2:after {left: 288px; width:90px}
+    #packages > .row > div[class="col-12"] > h2:before {right: 288px; width:60px}
+    #packages > .row > div[class="col-12"] > h2:after {left: 288px; width:60px}
     #packages .carousel-control-next {
         right: 0;
     }
     #packages .carousel-control-prev {
         left: 0;
     }
+    li.nav-item.hvr-underline-from-center{display: block}
 }
 
 /* Small devices (landscape phones, 576px and up)*/
