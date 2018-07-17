@@ -396,7 +396,7 @@ section#best-offers:hover{
     position: absolute;
     border-radius: 3px;
     top: 60px;
-    left: 334px;
+    left: 280px;
     z-index:5;
 }
 #packages > .row > div[class="col-12"] > h2:before{
@@ -407,7 +407,7 @@ section#best-offers:hover{
     position: absolute;
     border-radius: 3px;
     top: 60px;
-    right: 334px;
+    right: 280px;
     z-index:5;
 }
 #packages i.fas.fa-star {
@@ -420,6 +420,7 @@ section#best-offers:hover{
 #packages .card-title{
     background:#2180C4 ;
     padding: 10px 0;
+    border-bottom-left-radius: 5px;
     color: #fff;
 }
 #packages .card-body{
@@ -483,15 +484,34 @@ section#best-offers:hover{
     border-top-right-radius: 3px;
     border-top-left-radius: 3px;
 }
-#packages h5[data-name="italy"]::before{
-    content: "3 ليالى من 400ج.م";
+/*#packages h5[data-name="italy"]::before{*/
+    /*content: "3 ليالى من 400ج.م";*/
+    /*width: 121px;*/
+    /*height: 73px;*/
+    /*font-family: 'Cairo', sans-serif;*/
+    /*color: #fff;*/
+    /*background-color: #8A4F9F;*/
+    /*position: absolute;*/
+    /*top: 204px;*/
+    /*border-bottom-left-radius: 5px;*/
+    /*left: 0;*/
+    /*z-index: 222;*/
+    /*border-top-right-radius: 3px;*/
+    /*direction: rtl;*/
+    /*font-size: 12px;*/
+    /*font-weight: bold;*/
+    /*text-align: center;*/
+    /*padding-top: 30px;*/
+/*}*/
+#packages h5 > span{
     width: 121px;
     height: 73px;
     font-family: 'Cairo', sans-serif;
     color: #fff;
     background-color: #8A4F9F;
     position: absolute;
-    top: 233px;
+    top: 204px;
+    border-bottom-left-radius: 5px;
     left: 0;
     z-index: 222;
     border-top-right-radius: 3px;
@@ -499,7 +519,7 @@ section#best-offers:hover{
     font-size: 12px;
     font-weight: bold;
     text-align: center;
-    padding-top:30px;
+    padding-top: 30px;
 }
 
 #packages .carousel-control-next,
