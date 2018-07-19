@@ -9,6 +9,30 @@ $(document).ready(function() {
         cursorborder: "1px solid #fff", // css definition for cursor border
         zindex: [9999], // change z-index for scrollbar div
 
+    });
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        autoplay:true,
+        autoplayTimeout:1000,
+        autoplayHoverPause:true,
+        dots:false,
+        margin:10,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:true
+            },
+            600:{
+                items:3,
+                nav:false
+            },
+            1000:{
+                items:5,
+                nav:true,
+                loop:false
+            }
+        }
     })
 });
 $(window).on('scroll', function() {
